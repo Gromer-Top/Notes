@@ -33,6 +33,13 @@ li{
   left: 3%;
 }
 
-#input:focus{
+.deleteBtn{
+  position: absolute;
+  right: 10%;
+  border:none;
+  border-radius: 30%;
+}
+
+#input:focus, button:focus{
   outline: none;
 }
