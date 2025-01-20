@@ -11,11 +11,18 @@
   <div class="notes">
     <h1>Заметки</h1>
     <ul id="note-list">
-      <li class="note">Выучить HTML <button class="deleteBtn" type="submit">X</button></li>
-      <li class="note">Выучить CSS <button class="deleteBtn" type="submit">X</button></li>
-      <li class="note">Выучить JavaScript<button class="deleteBtn" type="submit">X</button></li>
+      <li class="note">
+          Выучить HTML
+        <button class="deleteBtn" type="submit" onclick="deleteNote(this)">X</button>
+      </li>
+      <li class="note">Выучить CSS
+        <button class="deleteBtn" type="submit" onclick="deleteNote(this)">X</button>
+      </li>
+      <li class="note">Выучить JavaScript
+        <button class="deleteBtn" type="submit" onclick="deleteNote(this)">X</button>
+      </li>
     </ul>
-    <input id="input" type="text"><button id="addNote" type="submit" onclick="addNote()"></button>
+    <input id="input" type="text"><button id="addNoteBtn" type="submit" onclick="addNote()">Ввести</button>
   </div>
   
   <script src="script.js"></script>

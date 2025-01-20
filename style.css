@@ -29,8 +29,23 @@ body{
   padding-left: 10px;
   bottom: 5%;
   height: 30px;
-  width: 90%;
+  width: 60%;
   left: 3%;
+}
+
+#addNoteBtn{
+  background-color: #FFC85B;
+  position: absolute;
+  right: 3%;
+  height: 30px;
+  width: 25%;
+  bottom: 6%;
+  text-align: center;
+  border: solid;
+  border-color: #FFB117;
+  border-width: 2px;
+  border-radius: 10px;
+  padding-left: 10px;
 }
 
 .deleteBtn{
