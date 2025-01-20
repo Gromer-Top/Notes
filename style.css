@@ -10,6 +10,7 @@ body{
 
 .notes{
   background-color: #FFDC97;
+  border-radius: 10px;
   position: relative;
   text-align: center;
   width: 70%;
