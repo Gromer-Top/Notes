@@ -9,15 +9,15 @@ for (var i = 0; i < deleteBtns.length; i++) {
   });
 }
 
-function sendMessage() {
-  let notes = document.querySelector("notes");
+function addNote() {
+  let notes = document.querySelector(".notes");
   let note = document.createElement('DIV');
   let input = document.getElementById('input')
   if (input.value != '')
   {
-    notes.classList.add('note');
+    note.classList.add('note');
     note.innerHTML = input.value;
-    chat.appendChild(note);
+    notes.appendChild(note);
     input.value = '';
   }
   input.value = '';
