@@ -1,5 +1,5 @@
 body{
-  background-color: #5B5B5D;
+  background-color: #E7CE8F;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +8,12 @@ body{
 }
 
 .notes{
-  background-color: #737374;
+  background-color: #FFDC97;
   text-align: center;
   width: 70%;
-  height: 30%;
+  height: 50%;
+}
+
+li{
+  text-align: left;
 }
