@@ -34,6 +34,7 @@ li{
 }
 
 .deleteBtn{
+  background-color: #FFCF70;
   position: absolute;
   right: 10%;
   border:none;
