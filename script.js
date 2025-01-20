@@ -10,8 +10,8 @@ for (var i = 0; i < deleteBtns.length; i++) {
 }
 
 function addNote() {
-  let notes = document.querySelector(".notes");
-  let note = document.createElement('DIV');
+  let notes = document.querySelector("#note-list");
+  let note = document.createElement('li');
   let input = document.getElementById('input')
   if (input.value != '')
   {
