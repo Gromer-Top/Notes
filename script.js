@@ -1,6 +1,3 @@
-//Массив кнопок удаления
-let deleteBtns = document.getElementsByClassName('deleteBtn');
-
 let inputText = document.getElementById("input")
 
 function addNote() {
@@ -16,11 +13,12 @@ function addNote() {
     deleteBtn.classList.add('deleteBtn');
     deleteBtn.innerHTML = "X";
     note.appendChild(deleteBtn);
+    deleteBtn.onclick = deleteNote;
     input.value = '';
   }
   input.value = '';
 }
 
-function deleteNote(el){
-  el.parentNode.remove();
+function deleteNote(){
+  this.parentNode.remove();
 }
