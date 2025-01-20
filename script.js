@@ -15,7 +15,6 @@ function addNote() {
     notes.appendChild(note);
     deleteBtn.classList.add('deleteBtn');
     deleteBtn.innerHTML = "X";
-    deleteBtns = document.getElementsByClassName('deleteBtn');
     note.appendChild(deleteBtn);
     input.value = '';
   }
