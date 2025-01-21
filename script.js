@@ -2,7 +2,7 @@ let inputText = document.getElementById("input")
 
 let notesList = [];
 
-for(let i = 0; i <= localStorage.length; i++)
+for(let i = 0; i < localStorage.length; i++)
 {
   if(localStorage.getItem(String(i)) != null)
   {
@@ -29,7 +29,7 @@ function addNote(text) {
   let input = document.getElementById('input')
   if(text!= null){
     note.classList.add('note');
-    note.innerHTML = text;
+    note.innerText = text;
     notes.appendChild(note);
     deleteBtn.classList.add('deleteBtn');
     note.appendChild(deleteBtn);
@@ -38,7 +38,7 @@ function addNote(text) {
   if (input.value != '')
   {
     note.classList.add('note');
-    note.innerHTML = input.value;
+    note.innerText = input.value;
     notes.appendChild(note);
     deleteBtn.classList.add('deleteBtn');
     note.appendChild(deleteBtn);
