@@ -57,6 +57,8 @@ body{
   position: absolute;
   background-color: #FFCF70;
   position: absolute;
+  height: 15px;
+  width: 15px;
   right: 10%;
   border:none;
   border-radius: 30%;
