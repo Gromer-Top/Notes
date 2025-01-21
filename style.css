@@ -20,6 +20,7 @@ body{
 }
 
 .note{
+  position: relative;
   user-select: text;
   text-align: left;
   word-wrap: break-word;
@@ -55,6 +56,7 @@ body{
 }
 
 .deleteBtn{
+  position: absolute;
   background-color: #FFCF70;
   position: absolute;
   right: 10%;
