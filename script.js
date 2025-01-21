@@ -47,7 +47,7 @@ function addNote(text) {
     let countNotes = notesList.length + 1;
     localStorage.setItem(countNotes, note.innerText);
     notesList.push(localStorage.getItem(String(countNotes)));
-    console.log(countNotes);
+    console.log(localStorage);
     console.log(notesList);
   }
   input.value = '';
