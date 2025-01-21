@@ -9,6 +9,7 @@ body{
 }
 
 .notes{
+  overflow: scroll;
   background-color: #FFDC97;
   border-radius: 10px;
   position: relative;
