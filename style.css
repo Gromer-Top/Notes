@@ -9,8 +9,6 @@ body{
 }
 
 .notes{
-  overflow-y: auto;
-  overflow-x: hidden;
   background-color: #FFDC97;
   border-radius: 10px;
   position: relative;
