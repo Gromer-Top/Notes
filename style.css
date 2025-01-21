@@ -22,6 +22,7 @@ body{
 .note{
   user-select: text;
   text-align: left;
+  word-wrap: break-word;
 }
 
 #input{
