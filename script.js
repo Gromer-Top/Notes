@@ -1,12 +1,13 @@
 let inputText = document.getElementById("input")
 
 let notesList = [];
-if(localStorage.getItem("1") != null)
-{
-  notesList.push(localStorage.getItem("1"));
-  addNote(notesList[0]);
+for(let i = 0; i<10; i++){
+  if(localStorage.getItem(String(i)) != null)
+  {
+    notesList.push(localStorage.getItem("1"));
+    addNote(notesList[0]);
+  }
 }
-
 function addNote(text) {
   let notes = document.querySelector("#note-list");
   let note = document.createElement('li');
