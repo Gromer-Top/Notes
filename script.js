@@ -7,10 +7,10 @@ for(let i = 0; i < localStorage.length; i++)
   if(localStorage.getItem(String(i)) != null)
   {
     notesList.push(localStorage.getItem(String(i)));
+    console.log(1)
   }
   else if(localStorage.getItem(String(i)) == null){
     localStorage.removeItem(String(i));
-    console.log("del");
   }
 }
 
@@ -44,10 +44,10 @@ function addNote(text) {
     note.appendChild(deleteBtn);
     deleteBtn.onclick = deleteNote;
     input.value = '';
-    let countNotes = localStorage.length + 1;
+    let countNotes = notesList.length + 1;
     localStorage.setItem(countNotes, note.innerText);
     notesList.push(localStorage.getItem(String(countNotes)));
-    console.log(localStorage);
+    console.log(countNotes);
     console.log(notesList);
   }
   input.value = '';
