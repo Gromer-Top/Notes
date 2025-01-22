@@ -7,7 +7,6 @@ for(let i = 0; i < localStorage.length; i++)
   if(localStorage.getItem(String(i)) != null)
   {
     notesList.push(localStorage.getItem(String(i)));
-    console.log(1)
   }
   else if(localStorage.getItem(String(i)) == null){
     localStorage.removeItem(String(i));
@@ -21,6 +20,9 @@ for(let i = 0; i <= notesList.length - 1;i++)
     addNote(String(notesList[i]));
   }
 }
+
+console.log(localStorage);
+console.log(notesList);
 
 function addNote(text) {
   let notes = document.querySelector("#note-list");
@@ -64,6 +66,8 @@ function deleteNote(){
       localStorage.removeItem(String(i));
     }
   }
+  console.log(localStorage);
+  console.log(notesList);
   
   this.parentNode.remove();
 }
